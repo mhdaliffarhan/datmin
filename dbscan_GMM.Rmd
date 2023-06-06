@@ -1,0 +1,90 @@
+---
+title: "datamining_cluster_P10"
+author: "Mhd Alif Farhan"
+date: "2023-06-04"
+output: html_document
+---
+
+```{r}
+# Mengimpor library yang diperlukan
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(mclust)
+library(dbscan)
+```
+
+```{r}
+# Import Data
+dataCountry <- read.csv("D:/01. Kuliah/06. Semester 6/Data Mining - Sara Sridebora Syaloom Sorta/Tugas/Pertemuan 10/Country-data.csv")
+head(dataCountry)
+str(dataCountry)
+```
+```{r}
+# Analisis Deskriptif
+cat("Ringkasan Statistik untuk Variabel Numerik:\n")
+summary(dataCountry[, c("child_mort", "exports", "health", "imports", "income", "inflation", "life_expec", "total_fer", "gdpp")])
+
+cat("\nJumlah Missing Values untuk Setiap Variabel:\n")
+colSums(is.na(dataCountry))
+```
+```{r}
+# Memilih kolom yang akan digunakan
+df_temp1 <- dataCountry %>% select(country, health, life_expec)
+```
+
+```{r}
+# Klasterisasi dengan metode DBSCAN
+df_temp2 <- df_temp1 %>% select(health, life_expec) %>%
+  mutate(across(everything(), as.numeric)) %>%
+  scale()
+
+db <- dbscan(df_temp2, eps = 0.317, minPts = 8)
+labels <- db$cluster
+n_clusters <- max(labels) - 1
+n_noise <- sum(labels == 0)
+
+print(paste0('Jumlah Clusters: ', n_clusters))
+print(paste0('Jumlah Noise Point: ', n_noise))
+for (i in 0:n_clusters) {
+  print(paste0('Jumlah Cluster ke-', i, ': ', sum(labels == i)))
+}
+```
+```{r}
+# Klasterisasi dengan metode GMM
+gmm <- Mclust(df_temp2)
+y_gmm <- gmm$classification
+```
+
+```{r}
+# Plot hasil klasterisasi DBSCAN
+df_temp2 <- as.data.frame(df_temp2)
+df_temp2$labels <- as.factor(labels)
+df_temp2$core_samples_mask <- as.logical(labels != 0)
+
+plot_dbscan <- ggplot(df_temp2, aes(x = health, y = life_expec, color = labels, shape = core_samples_mask)) +
+  geom_point(size = 4) +
+  ggtitle(paste0('Estimated number of clusters (DBSCAN): ', n_clusters))
+
+print(plot_dbscan)
+```
+```{r}
+# Plot hasil klasterisasi GMM
+df_temp2$labels <- as.factor(y_gmm)
+
+plot_gmm <- ggplot(df_temp2, aes(x = health, y = life_expec, color = labels)) +
+  geom_point(size = 4) +
+  ggtitle('GMM Clustering')
+
+print(plot_gmm)
+```
+```{r}
+# Gabungkan plot hasil klasterisasi DBSCAN dan GMM
+df_comb <- df_temp1 %>%
+  mutate(`DBSCAN cluster` = labels, `GMM cluster` = y_gmm)
+
+print(df_comb)
+write.csv(df_comb, "dbscan_GMM2.csv", row.names = FALSE)
+```
+
+

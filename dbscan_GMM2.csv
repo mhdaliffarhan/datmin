@@ -1,0 +1,168 @@
+"country","health","life_expec","DBSCAN cluster","GMM cluster"
+"Afghanistan",7.58,56.2,0,1
+"Albania",6.55,76.3,1,2
+"Algeria",4.17,76.5,1,2
+"Angola",2.85,60.1,0,3
+"Antigua and Barbuda",6.03,76.8,1,2
+"Argentina",8.1,75.8,1,2
+"Armenia",4.4,73.3,1,3
+"Australia",8.73,82,2,4
+"Austria",11,80.5,2,4
+"Azerbaijan",5.88,69.1,1,3
+"Bahamas",7.89,73.8,1,2
+"Bahrain",4.97,76,1,2
+"Bangladesh",3.52,70.4,1,3
+"Barbados",7.97,76.7,1,2
+"Belarus",5.61,70.4,1,3
+"Belgium",10.7,80,2,4
+"Belize",5.2,71.4,1,3
+"Benin",4.1,61.8,1,3
+"Bhutan",5.2,72.1,1,3
+"Bolivia",4.84,71.6,1,3
+"Bosnia and Herzegovina",11.1,76.8,0,2
+"Botswana",8.3,57.1,0,1
+"Brazil",9.01,74.2,0,2
+"Brunei",2.84,77.1,0,2
+"Bulgaria",6.87,73.9,1,2
+"Burkina Faso",6.74,57.9,0,3
+"Burundi",11.6,57.7,0,1
+"Cambodia",5.68,66.1,1,3
+"Cameroon",5.13,57.3,0,3
+"Canada",11.3,81.3,2,4
+"Cape Verde",4.09,72.5,1,3
+"Central African Republic",3.98,47.5,0,1
+"Chad",4.53,56.5,0,3
+"Chile",7.96,79.1,1,2
+"China",5.07,74.6,1,2
+"Colombia",7.59,76.4,1,2
+"Comoros",4.51,65.9,1,3
+"Congo, Dem. Rep.",7.91,57.5,0,1
+"Congo, Rep.",2.46,60.4,0,3
+"Costa Rica",10.9,80.4,2,4
+"Cote d'Ivoire",5.3,56.3,0,3
+"Croatia",7.76,76.3,1,2
+"Cyprus",5.97,79.9,0,2
+"Czech Republic",7.88,77.5,1,2
+"Denmark",11.4,79.5,2,4
+"Dominican Republic",6.22,74.6,1,2
+"Ecuador",8.06,76.7,1,2
+"Egypt",4.66,70.5,1,3
+"El Salvador",6.91,74.1,1,2
+"Equatorial Guinea",4.48,60.9,1,3
+"Eritrea",2.66,61.7,0,3
+"Estonia",6.03,76,1,2
+"Fiji",4.86,65.3,1,3
+"Finland",8.95,80,2,4
+"France",11.9,81.4,2,4
+"Gabon",3.5,62.9,0,3
+"Gambia",5.69,65.5,1,3
+"Georgia",10.1,72.8,0,2
+"Germany",11.6,80.1,2,4
+"Ghana",5.22,62.2,1,3
+"Greece",10.3,80.4,2,4
+"Grenada",5.86,71.3,1,3
+"Guatemala",6.85,71.3,1,2
+"Guinea",4.93,58,1,3
+"Guinea-Bissau",8.5,55.6,0,1
+"Guyana",5.38,65.5,1,3
+"Haiti",6.91,32.1,0,1
+"Hungary",7.33,74.5,1,2
+"Iceland",9.4,82,2,4
+"India",4.05,66.2,1,3
+"Indonesia",2.61,69.9,0,3
+"Iran",5.6,74.5,1,2
+"Iraq",8.41,67.2,0,1
+"Ireland",9.19,80.4,2,4
+"Israel",7.63,81.4,1,4
+"Italy",9.53,81.7,2,4
+"Jamaica",4.81,74.7,1,2
+"Japan",9.49,82.8,2,4
+"Jordan",8.04,75.8,1,2
+"Kazakhstan",4.29,68.4,1,3
+"Kenya",4.75,62.8,1,3
+"Kiribati",11.3,60.7,0,1
+"Kuwait",2.63,78.2,0,2
+"Kyrgyz Republic",6.18,68.5,1,3
+"Lao",4.47,63.8,1,3
+"Latvia",6.68,73.1,1,2
+"Lebanon",7.03,79.8,0,2
+"Lesotho",11.1,46.5,0,1
+"Liberia",11.8,60.8,0,1
+"Libya",3.88,76.1,1,2
+"Lithuania",7.04,73.2,1,2
+"Luxembourg",7.77,81.3,1,4
+"Macedonia, FYR",7.09,74,1,2
+"Madagascar",3.77,60.8,0,3
+"Malawi",6.59,53.1,0,1
+"Malaysia",4.39,74.5,1,2
+"Maldives",6.33,77.9,1,2
+"Mali",4.98,59.5,1,3
+"Malta",8.65,80.3,1,4
+"Mauritania",4.41,68.2,1,3
+"Mauritius",6,73.4,1,2
+"Micronesia, Fed. Sts.",14.2,65.4,0,1
+"Moldova",11.7,69.7,0,1
+"Mongolia",5.44,66.2,1,3
+"Montenegro",9.11,76.4,1,2
+"Morocco",5.2,73.5,1,2
+"Mozambique",5.21,54.5,0,3
+"Myanmar",1.97,66.8,0,3
+"Namibia",6.78,58.6,0,3
+"Nepal",5.25,68.3,1,3
+"Netherlands",11.9,80.7,2,4
+"New Zealand",10.1,80.9,2,4
+"Niger",5.16,58.8,1,3
+"Nigeria",5.07,60.5,1,3
+"Norway",9.48,81,2,4
+"Oman",2.77,76.1,0,2
+"Pakistan",2.2,65.3,0,3
+"Panama",8.1,77.8,1,2
+"Paraguay",5.87,74.1,1,2
+"Peru",5.08,77.9,1,2
+"Philippines",3.61,69,1,3
+"Poland",7.46,76.3,1,2
+"Portugal",11,79.8,2,4
+"Qatar",1.81,79.5,0,2
+"Romania",5.58,73.7,1,2
+"Russia",5.08,69.2,1,3
+"Rwanda",10.5,64.6,0,1
+"Samoa",6.47,71.5,1,3
+"Saudi Arabia",4.29,75.1,1,2
+"Senegal",5.66,64,1,3
+"Serbia",10.4,74.7,0,2
+"Seychelles",3.4,73.4,1,3
+"Sierra Leone",13.1,55,0,1
+"Singapore",3.96,82.7,0,3
+"Slovak Republic",8.79,75.5,1,2
+"Slovenia",9.41,79.5,2,4
+"Solomon Islands",8.55,61.7,0,1
+"South Africa",8.94,54.3,0,1
+"South Korea",6.93,80.1,0,4
+"Spain",9.54,81.9,2,4
+"Sri Lanka",2.94,74.4,0,2
+"St. Vincent and the Grenadines",4.47,71.6,1,3
+"Sudan",6.32,66.3,1,3
+"Suriname",7.01,70.3,1,3
+"Sweden",9.63,81.5,2,4
+"Switzerland",11.5,82.2,2,4
+"Tajikistan",5.98,69.6,1,3
+"Tanzania",6.01,59.3,0,3
+"Thailand",3.88,76.6,1,2
+"Timor-Leste",9.12,71.1,0,2
+"Togo",7.65,58.7,0,1
+"Tonga",5.07,69.9,1,3
+"Tunisia",6.21,76.9,1,2
+"Turkey",6.74,78.2,1,2
+"Turkmenistan",2.5,67.9,0,3
+"Uganda",9.01,56.8,0,1
+"Ukraine",7.72,70.4,0,2
+"United Arab Emirates",3.66,76.5,1,2
+"United Kingdom",9.64,80.3,2,4
+"United States",17.9,78.7,0,1
+"Uruguay",8.35,76.4,1,2
+"Uzbekistan",5.81,68.8,1,3
+"Vanuatu",5.25,63,1,3
+"Venezuela",4.91,75.4,1,2
+"Vietnam",6.84,73.1,1,2
+"Yemen",5.18,67.5,1,3
+"Zambia",5.89,52,0,3
